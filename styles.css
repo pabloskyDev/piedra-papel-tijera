@@ -38,11 +38,29 @@ h1 {
 
 .cards {
     display: flex;
-    height: 100px;
+    justify-content: center;
+    position: relative;
+    height: auto;
+    padding: 10px;
 }
 
 .cards .card {
-   height: 100%;
-    width: 30px;
+    position: relative;
+    min-height: 150px;
+    width: 20%;
+    border: 1px solid #000;
+}
+
+.cards .card:nth-child(1) {
+    background-color: pink;
+    transform: rotate(-8deg);
+}
+
+.cards .card:nth-child(2) {
+    background-color: greenyellow;
+    transform: rotate(8deg);
+}
+
+.score {
     border: 1px solid #000;
 }
